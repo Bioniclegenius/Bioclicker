@@ -3,15 +3,15 @@ package Bioclicker;
 import java.util.List;
 
 public class Resources {
-    public List<Resource> Resources;
+    public List<Resource> resources;
 	
     public Resources() {
-        Resources.add(new Resource("Bio", "Bioniclegenius", 0, 0));
+        resources.add(new Resource("Bio", "Bioniclegenius"));
     }
 	
     public Resource Get(String resName) {
-        for(Resource res: Resources){
-            if(res.Name == resName)
+        for(Resource res: resources){
+            if(res.name == resName)
                 return res;
         }
         return null;
